@@ -37,7 +37,7 @@ section {
 }
 
 .hero {
-  background-image: url(../images/hero3.jpg);
+  background-image: url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +91,8 @@ section {
 
 .works_list li {
   padding: 30px;
-  transition: 0.6s
+  transition: 0.6s;
+  cursor: pointer;
 }
 
 .works_list li:hover {
@@ -100,8 +101,12 @@ section {
 }
 
 .works_list li img {
-  border: solid .5px #241a08;
+  /* border: solid .5px #241a08; */
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+
+.works_text {
+  display: none;
 }
 
 .footer_wrapper {
@@ -111,4 +116,81 @@ section {
 .footer_wrapper p {
   text-align: center;
   font-size: 12px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+}
+
+.modal_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_content {
+  position: relative;
+  background-color: #f5f5f5;
+  width: 70%;
+  height: fit-content;
+  border-radius: 10px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index:10;
+}
+
+.bigimg {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 10% 5%; 
+}
+
+.bigimg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal_text {
+  font-size: 16px;
+  padding: 0 10% 10%;
+  
+}
+
+.close-btn {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  background-image: url(../images/cross.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+  .modal_content {
+      width: 85%;
+      top: 30%;
+  }
+
+  .close-btn {
+      width: 40px;
+      height: 40px;
+      right: -20px;
+      top: -20px;
+  }
 }

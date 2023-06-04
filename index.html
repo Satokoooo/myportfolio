@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="tools/stylesheet/responsive.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@100&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,71 +20,51 @@
       <h1 class="header_title">Satoko HARADA</h1>
       <nav>
         <ul class="header_nav">
+          <li class="header_item"><a href="#worksDesign">design</a></li>
+          <li class="header_item"><a href="#worksCoding">coding</a></li>
           <li class="header_item"><a href="#about">about</a></li>
           <li class="header_item"><a href="#skills">skills</a></li>
-          <li class="header_item"><a href="#works">works</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
     <div class="hero"></div>
-    <section id="about" class="about">
-      <h2 class="section_title">about</h2>
-      <div class="about_wrapper">
-        <div class="about_photo">
-          <img src="tools/images/aboutphoto.png">
-        </div>
-        <div class="about_profile">
-          <p>name : Satoko HARADA</p>
-          <p>language : Japanese/French/English</p>
-          <p class="about_introduction">
-            神奈川県出身。日本国内にて服飾デザイン、パターンの基礎を学んだ後、フランスへ留学。フランスではオートクチュールのデザイン、技法を学びハンドメイドアクセサリーアトリエにて勤務。帰国後は写真スタジオで撮影技術やモノづくりの素晴らしさを学びました。グラフィックデザインの知識やクリエイティブな現場で培ってきた技術を活かし、Web業界でお客様のニーズにあったモノづくりを制作、提案できる技術者を目指しています。
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="skills">
-      <h2 class="section_title">skills</h2>
-      <div class="skills_wrrapper">
-        <ul class="skills_list">
-          <li>
-            <h3 class="skills_title">coding</h3>
-            <div class="skills_contents">
-              <div class="skills_mouseicon"></div>
-              <p class="skills_tools">HTML/CSS/JavaScript/Vue.js/Laravel</p>
-              <p>
-                HTML、CSSをメインにお客様のご要望をヒアリングし、忠実に再現します。スマートフォン対応サイトや、
-                JavaScriptを使用した動きのあるサイト等、様々なサイトを作成します。
-              </p>
-            </div>
+    <section id="worksDesign" class="works">
+      <h2 class="section_title">design</h2>
+      <div class="works_wrapper">
+        <ul class="works_list">
+          <li class="works_item">
+            <img src="tools/images/beautysalon.jpg" alt="脱毛サロンバナー">
+            <p class="works_text">医療脱毛サロン（架空サロン）のバナー広告。女性らしさ、爽やかさをイメージして作成しました。</p>
           </li>
-          <li>
-            <h3 class="skills_title">graphic</h3>
-            <div class="skills_contents">
-              <div class="skills_pcicon"></div>
-              <p class="skills_tools">photoshop/illustrator/XD/Premiere Pro/After Effects</p>
-              <p>画像編集、ロゴ制作やHPデザイン作成、さまざまなWebコンテンツのご要望にあった提案、制作を致します。</p>
-            </div>
+          <li class="works_item">
+            <img src="tools/images/coupon.jpg" alt="クーポンバナー">
+            <p class="works_text">Webクーポンチケット。割引率を印象強くしお得感を出すために、コントラスト高めの配色にしました。
+            </p>
+          </li>
+          <li class="works_item">
+            <img src="tools/images/englishschool.png" alt="オンライン英会話スクールバナー">
+            <p class="works_text">架空オンライン英会話スクールのバナー広告。
+              学習系のまじめな印象を与えるようにデザインしました。また、キーカラーに補色系の色を配置し、限定であることを強調しています。
+            </p>
+          </li>
+          <li class="works_item">
+            <img src="tools/images/modelroom.png" alt="モデルルームバナー">
+            <p class="works_text">架空のモデルルームバナー広告。高級感や爽やかさ、落ち着く印象を与えるカラー、デザインにしました。</p>
           </li>
         </ul>
       </div>
     </section>
-    <section id="works" class="works">
-      <h2 class="section_title">works</h2>
+    <section id="worksCoding" class="works">
+      <h2 class="section_title">coding</h2>
       <div class="works_wrapper">
         <ul class="works_list">
-          <li>
-            <a href="https://satokoooo.github.io/pc/"><img src="tools/images/work1.png"></a>
-          </li>
           <li>
             <a href="https://satokoooo.github.io/sample2/"><img src="tools/images/work3.png"></a>
           </li>
           <li>
             <a href="https://satokoooo.github.io/responsive/"><img src="tools/images/work2.png"></a>
-          </li>
-          <li>
-            <a href="https://satokoooo.github.io/sample06/"><img src="tools/images/work7.png"></a>
           </li>
           <li>
             <a href="https://satokoooo.github.io/sample03/"><img src="tools/images/work4.png"></a>
@@ -97,8 +78,56 @@
           <li>
             <a href="https://satokoooo.github.io/sample01/"><img src="tools/images/work8.png"></a>
           </li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h2 class="section_title">about</h2>
+      <div class="about_wrapper">
+        <div class="about_photo">
+          <img src="tools/images/aboutphoto.png" alt="デザイナー人物画像">
+        </div>
+        <div class="about_profile">
+          <p>name : Satoko HARADA</p>
+          <p>language : Japanese/French/English</p>
+          <p class="about_introduction">
+            グラフィックデザインの知識やクリエイティブな現場で培ってきた技術を活かし、Web業界でお客様のニーズにあったモノづくりを制作、デザイン、ビジネスマーケティング双方の観点から提案できる技術者を目指しています。
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal_bg"></div>
+      <div class="modal_content">
+          <p class="close-btn"></p>
+          <div class="bigimg">
+              <img src="" alt="">
+          </div>
+          <p class="modal_text"></p>
+      </div>
+    </div>
+    <section id="skills" class="skills">
+      <h2 class="section_title">skills</h2>
+      <div class="skills_wrrapper">
+        <ul class="skills_list">
           <li>
-            <a href="https://traveldiary.mydns.jp/"><img src="tools/images/work9.png"></a>
+            <h3 class="skills_title">design</h3>
+            <div class="skills_contents">
+              <div class="skills_pcicon"></div>
+              <p class="skills_tools">photoshop/illustrator/XD/Premiere Pro/After Effects</p>
+              <p>画像編集、広告LPやHPデザイン作成、さまざまなWebコンテンツのご要望にあった提案、制作を致します。</p>
+            </div>
+          </li>
+          <li>
+            <h3 class="skills_title">coding</h3>
+            <div class="skills_contents">
+              <div class="skills_mouseicon"></div>
+              <p class="skills_tools">HTML/CSS/JavaScript/Vue.js/Laravel</p>
+              <p>
+                HTML、CSSをメインにお客様のご要望をヒアリングし、忠実に再現します。スマートフォン対応サイトや、
+                JavaScriptを使用した動きのあるサイト等、様々なサイトを作成します。
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -109,6 +138,24 @@
       <p>Copyright Satoko HARADA All Rights Reserved.</p>
     </div>
   </footer>
-</body>
+  <script>
+    $(function() {
+        $('.works_item').click(function() {
+            let imgSrc = $(this).children().attr('src');
+            let text = $(this).children('p').text();
 
+            $('.bigimg').children().attr('src', imgSrc);
+            $('.modal_text').text(text);
+            $('.modal').fadeIn(200);
+        });
+
+        $('.close-btn').click(function() {
+            $('.modal').fadeOut(200);
+        });
+        $('.modal_bg').click(function() {
+            $('.modal').fadeOut(200);
+        });
+    });
+  </script>
+</body>
 </html>
