@@ -35,23 +35,45 @@
       <div class="works_wrapper">
         <ul class="works_list">
           <li class="works_item">
-            <img src="tools/images/beautysalon.jpg" alt="脱毛サロンバナー">
-            <p class="works_text">医療脱毛サロン（架空サロン）のバナー広告。女性らしさ、爽やかさをイメージして作成しました。</p>
-          </li>
-          <li class="works_item">
-            <img src="tools/images/coupon.jpg" alt="クーポンバナー">
-            <p class="works_text">Webクーポンチケット。割引率を印象強くしお得感を出すために、コントラスト高めの配色にしました。
-            </p>
+            <img src="tools/images/modelroom.png" alt="モデルルームバナー">
+            <p class="works_title">架空モデルルームバナー広告</p>
+            <p class="works_tools">photoshop/illustrator</p>
+            <p class="works_text">高級感や爽やかさ、落ち着く印象を与えるカラー、デザインにしました。</p>
           </li>
           <li class="works_item">
             <img src="tools/images/englishschool.png" alt="オンライン英会話スクールバナー">
-            <p class="works_text">架空オンライン英会話スクールのバナー広告。
+            <p class="works_title">架空オンライン英会話スクールバナー広告</p>
+            <p class="works_tools">photoshop/illustrator</p>
+            <p class="works_text">
               学習系のまじめな印象を与えるようにデザインしました。また、キーカラーに補色系の色を配置し、限定であることを強調しています。
             </p>
           </li>
           <li class="works_item">
-            <img src="tools/images/modelroom.png" alt="モデルルームバナー">
-            <p class="works_text">架空のモデルルームバナー広告。高級感や爽やかさ、落ち着く印象を与えるカラー、デザインにしました。</p>
+            <img src="tools/images/beautysalon.jpg" alt="脱毛サロンバナー">
+            <p class="works_title">架空医療脱毛サロンバナー広告</p>
+            <p class="works_tools">photoshop/illustrator</p>
+            <p class="works_text">女性らしさ、爽やかさをイメージして作成しました。</p>
+          </li>
+          <li class="works_item">
+            <img src="tools/images/coupon.jpg" alt="クーポンバナー">
+            <p class="works_title">Webクーポンチケット</p>
+            <p class="works_tools">illustrator</p>
+            <p class="works_text">割引率を印象強くしお得感を出すために、コントラスト高めの配色にしました。
+            </p>
+          </li>
+          <li>
+            <a href="https://satokoooo.github.io/demo2/">
+              <img src="tools/images/logogogo.png" alt="株式会社LOGOGOGO">
+            </a>
+            <p class="works_title">架空IT会社HP</p>
+            <p class="works_tools">HTML/CSS/JavaScript</p>
+          </li>
+          <li>
+            <a href="https://satokoooo.github.io/demo1/">
+              <img src="tools/images/nagaoka.png" alt="長岡建設">
+            </a>
+            <p class="works_title">架空工事会社LP</p>
+            <p class="works_tools">HTML/CSS/JavaScript</p>
           </li>
         </ul>
       </div>
@@ -103,6 +125,8 @@
           <div class="bigimg">
               <img src="" alt="">
           </div>
+          <p class="modal_tools"></p>
+          <p class="modal_title"></p>
           <p class="modal_text"></p>
       </div>
     </div>
@@ -142,9 +166,13 @@
     $(function() {
         $('.works_item').click(function() {
             let imgSrc = $(this).children().attr('src');
-            let text = $(this).children('p').text();
+            let title = $(this).children('.works_title').text();
+            let tools = $(this).children('.works_tools').text();
+            let text = $(this).children('.works_text').text();
 
             $('.bigimg').children().attr('src', imgSrc);
+            $('.modal_title').text(title);
+            $('.modal_tools').text(tools);
             $('.modal_text').text(text);
             $('.modal').fadeIn(200);
         });
