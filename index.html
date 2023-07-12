@@ -15,12 +15,20 @@
 </head>
 
 <body>
+  <div class="hero">
+    <h1 class="site_title">Portfolio</h1>
+  </div>
   <header>
     <div class="header_wrapper">
-      <h1 class="header_title">Satoko HARADA</h1>
-      <nav>
+      <button class="sp_hamburger">
+        <span class="hamburger_line first_line"></span>
+        <span class="hamburger_line second_line"></span>
+        <span class="hamburger_line third_line"></span>
+      </button>
+      <nav class="nav">
         <ul class="header_nav">
-          <li class="header_item"><a href="#worksDesign">design</a></li>
+          <li class="header_item"><a href="#worksBanner">banner</a></li>
+          <li class="header_item"><a href="#worksLpHp">LP/HP</a></li>
           <li class="header_item"><a href="#worksCoding">coding</a></li>
           <li class="header_item"><a href="#about">about</a></li>
           <li class="header_item"><a href="#skills">skills</a></li>
@@ -28,21 +36,21 @@
       </nav>
     </div>
   </header>
+  
   <main>
-    <div class="hero"></div>
-    <section id="worksDesign" class="works">
-      <h2 class="section_title">design</h2>
+    <section id="worksBanner" class="works">
+      <h2 class="section_title">banner</h2>
       <div class="works_wrapper">
         <ul class="works_list">
           <li class="works_item">
             <img src="tools/images/modelroom.png" alt="モデルルームバナー">
-            <p class="works_title">架空モデルルームバナー広告</p>
+            <p class="works_title">モデルルームバナー広告</p>
             <p class="works_tools">Photoshop/Illustrator</p>
             <p class="works_text">高級感や爽やかさ、落ち着く印象を与えるカラー、デザインにしました。</p>
           </li>
           <li class="works_item">
             <img src="tools/images/englishschool.png" alt="オンライン英会話スクールバナー">
-            <p class="works_title">架空オンライン英会話スクールバナー広告</p>
+            <p class="works_title">オンライン英会話スクールバナー広告</p>
             <p class="works_tools">Photoshop/Illustrator</p>
             <p class="works_text">
               学習系のまじめな印象を与えるようにデザインしました。また、キーカラーに補色系の色を配置し、限定であることを強調しています。
@@ -50,9 +58,15 @@
           </li>
           <li class="works_item">
             <img src="tools/images/beautysalon.jpg" alt="脱毛サロンバナー">
-            <p class="works_title">架空医療脱毛サロンバナー広告</p>
+            <p class="works_title">医療脱毛サロンバナー広告</p>
             <p class="works_tools">Photoshop/Illustrator</p>
-            <p class="works_text">女性らしさ、爽やかさをイメージして作成しました。</p>
+            <p class="works_text">ターゲット層が”美容に興味のある20代前半の女性”ということから、女性らしさ、可愛さ、爽やかさを感じさせる配色で作成しました。</p>
+          </li>
+          <li class="works_item">
+            <img src="tools/images/beautycream.jpg" alt="化粧品バナー">
+            <p class="works_title">化粧品バナー広告</p>
+            <p class="works_tools">Photoshop/Illustrator</p>
+            <p class="works_text">化粧品の高級感や清潔感を出すため、濃い色と薄い色のコントラストを意識し、濃い茶色を使用することで落ち着いた上品さを表現しています。</p>
           </li>
           <li class="works_item">
             <img src="tools/images/coupon.jpg" alt="クーポンバナー">
@@ -61,6 +75,13 @@
             <p class="works_text">割引率を印象強くしお得感を出すために、コントラスト高めの配色にしました。
             </p>
           </li>
+        </ul>
+      </div>
+    </section>
+    <section id="worksLpHp" class="works">
+      <h2 class="section_title">LP/HP</h2>
+      <div class="works_wrapper">
+        <ul class="works_list">
           <li>
             <a href="https://xd.adobe.com/view/7b0dac94-e155-45f5-825a-46cffcae8968-2e5e/">
               <img src="tools/images/anken.png" alt="案件管理webシステム">
@@ -72,14 +93,14 @@
             <a href="https://satokoooo.github.io/demo2/">
               <img src="tools/images/logogogo.png" alt="株式会社LOGOGOGO">
             </a>
-            <p class="works_title">架空IT会社HP</p>
+            <p class="works_title">IT会社HP</p>
             <p class="works_tools">Photoshop/Illustrator/HTML/CSS/JavaScript</p>
           </li>
           <li>
             <a href="https://satokoooo.github.io/demo1/">
               <img src="tools/images/nagaoka.png" alt="長岡建設">
             </a>
-            <p class="works_title">架空工事会社LP</p>
+            <p class="works_title">工事会社LP</p>
             <p class="works_tools">Illustrator/HTML/CSS/JavaScript</p>
           </li>
           <li>
@@ -126,12 +147,9 @@
     <section id="about" class="about">
       <h2 class="section_title">about</h2>
       <div class="about_wrapper">
-        <div class="about_photo">
-          <img src="tools/images/aboutphoto.png" alt="デザイナー人物画像">
-        </div>
         <div class="about_profile">
-          <p>name : Satoko HARADA</p>
-          <p>language : Japanese/French/English</p>
+          <p>Satoko HARADA</p>
+          <p>Japanese/French/English</p>
           <p class="about_introduction">
             グラフィックデザインの知識やクリエイティブな現場で培ってきた技術を活かし、Web業界でお客様のニーズにあったモノづくりを制作、デザイン、ビジネスマーケティング双方の観点から提案できる技術者を目指しています。
           </p>
@@ -142,12 +160,16 @@
       <div class="modal_bg"></div>
       <div class="modal_content">
           <p class="close-btn"></p>
-          <div class="bigimg">
-              <img src="" alt="">
+          <div class="modal_contentWrap">
+            <div class="bigimg">
+                <img src="" alt="">
+            </div>
+            <div class="modal_textWrap">
+              <p class="modal_tools"></p>
+              <p class="modal_title"></p>
+              <p class="modal_text"></p>
+            </div>
           </div>
-          <p class="modal_tools"></p>
-          <p class="modal_title"></p>
-          <p class="modal_text"></p>
       </div>
     </div>
     <section id="skills" class="skills">
@@ -202,6 +224,11 @@
         });
         $('.modal_bg').click(function() {
             $('.modal').fadeOut(200);
+        });
+
+        $('.sp_hamburger').click(function() {
+            $('.nav').toggleClass('nav_show');
+            $('.hamburger_line').toggleClass('hamburger_open');
         });
     });
   </script>
