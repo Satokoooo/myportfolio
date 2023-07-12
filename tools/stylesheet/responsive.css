@@ -6,23 +6,91 @@
     width: 100%;
   }
 
-  .header_wrapper {
-    padding: 30px 30px;
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.6);
   }
 
-  .header_title {
-    margin-bottom: 30px;
+  .header_wrapper {
+    padding: 15px 30px;
+    width: 100px;
+  }
+
+  .sp_hamburger {
+    height: 27px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .sp_hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  .first_line {
+    top: 0;
+    transition: 0.7s;
+  }
+
+  .second_line {
+    top: 12px;
+    transition: 0.7s;
+  }
+
+  .third_line {
+    bottom: 0;
+    transition: 0.7s;
+  }
+
+  .first_line.hamburger_open {
+    transform: translateY(12px) rotate(45deg);
+    left: 0;
+    background-color: #241a08;
+    transition: 0.7s;
+  }
+
+  .second_line.hamburger_open {
+    display: none;
+  }
+
+  .third_line.hamburger_open {
+    transform: translateY(-12px) rotate(-45deg);
+    left: 0;
+    background-color: #241a08;
+    transition: 0.7s;
+  }
+
+  .header_wrapper .nav {
+    background-color: #fff;
+    padding: 80px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: 1s;
+  }
+
+  .header_wrapper .nav_show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s;
   }
 
   .header_nav li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  .about_photo {
-    width: 60%;
-    padding: 0 5%;
-    padding-bottom: 50px;
-    margin: 0 auto;
+  .site_title {
+    font-size: 50px;
   }
  
   .about_profile {
@@ -43,12 +111,10 @@
   }
 
   .works_list li {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
     padding: 30px 0;
   } 
-
 }
 
 @media (min-width:800px){
@@ -60,7 +126,11 @@
   .header_wrapper {
     padding: 50px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .site_title {
+    font-size: 70px;
   }
 
   .header_nav {
@@ -68,21 +138,13 @@
   }
 
   .header_nav li {
-    margin-right: 25px;
-  }
-
-  .about_wrapper {
-    display: flex;
-  }
-  
-
-  .about_photo {
-    width: 40%;
-    padding: 0 5%;
+    padding: 0 20px;
   }
   
   .about_profile {
-    width: 60%;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .skills_list {
@@ -108,6 +170,4 @@
     width: 50%;
     height: auto;
   }
-  
-  
 }
